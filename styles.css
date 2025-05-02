@@ -251,3 +251,47 @@ header {
     display: none;
 }
 
+.menuInfoDesktop{
+    display: flex;
+    justify-content: end;
+    .lista-Perfil{
+        background-color: #5C4033;
+        padding: 20px;
+        position:absolute;
+        list-style: none;
+
+        .saidaEmail{
+            padding: 20px 0px;
+        }
+
+.btn-logout{
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    display: flex;
+    margin-top: 4px;
+    cursor: pointer;
+    background-color:#865d49;
+
+&:hover{
+    background-color: #A67B5B ;
+    }   
+}
+
+.btn-editarPerfil a{
+    text-decoration: none;
+    color: #F5EBDD;
+    cursor: pointer;
+
+    &:hover{
+        color: #A67B5B ;
+    }
+}
+
+        li{
+            color: #F5EBDD;
+        }
+    }
+}
+

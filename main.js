@@ -118,8 +118,6 @@ alert("aguarde, estamos te registrando...")
     },2000)
 })
 
-
-
 registro.addEventListener("click", ()=> {
     ModalRegistro.showModal()
     modal.close()
@@ -136,11 +134,23 @@ fecharRegistro.addEventListener("click", () =>{
 })
 
 function verificaUsuarioLogado(){
+    const logado = document.querySelector(".logado")
+    
+    logado.addEventListener('click', ()=>{
+    const menuInfoDesktop = document.querySelector(".lista-Perfil")
+    menuInfoDesktop.classList.toggle('hide')
+})
+
     const usuarioLogado = localStorage.getItem('usuario')
 
     if(usuarioLogado){
         document.querySelector(".btn-login").classList.add("hide")
         document.querySelector(".logado").classList.remove("logado")
     }
+
+    
 }
+
+
+
 
