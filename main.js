@@ -139,6 +139,7 @@ function verificaUsuarioLogado(){
     logado.addEventListener('click', ()=>{
     const menuInfoDesktop = document.querySelector(".lista-Perfil")
     menuInfoDesktop.classList.toggle('hide')
+    exibeCredenciais()
 })
 
     const usuarioLogado = localStorage.getItem('usuario')
@@ -146,10 +147,9 @@ function verificaUsuarioLogado(){
     if(usuarioLogado){
         document.querySelector(".btn-login").classList.add("hide")
         document.querySelector(".logado").classList.remove("logado")
-        exibeCredenciais()
-
     }   
 }
+
 
 function exibeCredenciais(){
 
@@ -162,5 +162,4 @@ function exibeCredenciais(){
     saidaNome.innerHTML = usuario.nome
 
     console.log("TESTE TESTE")
-
 }
