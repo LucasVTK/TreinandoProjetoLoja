@@ -1,0 +1,253 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto ;
+}
+
+  /* Header visual */
+header {
+    background-color: #5C4033;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: end;
+    }
+  /* Remove bolinhas da lista */
+.nav-lista {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+
+.logado{
+    display: none;
+}
+}
+
+.material-icons{
+    color: #F5EBDD;
+    cursor: pointer;
+
+    
+}
+
+  /* Estilo dos links */
+.nav-item a {
+    text-decoration: none;
+    color: #F5EBDD;
+    font-weight: bold;
+    }
+
+.nav-item a:hover {
+    color: #FADADD;
+}
+
+.produtos{
+    background-color: #EFE1D6;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.produto{
+    padding: 20px;
+    margin: 0 auto;
+    align-items: center;
+    .Nome-produto{
+        color: #5C4033;
+    }
+
+    .btn-expandir{
+        font-size: 16px;
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        display: flex;
+        margin-top: 4px;
+        cursor: pointer;
+        background-color:#865d49;
+
+        &:hover{
+            background-color: #A67B5B ;
+        }
+    }
+
+    .btn-carrinho{
+        font-size: 16px;
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        display: flex;
+        margin-top: 4px;
+        cursor: pointer;
+        background-color:#865d49;
+
+        &:hover{
+            background-color: #A67B5B ;
+            color: #341608;
+        }
+    }
+    .preco{
+        color: #000000;
+    }
+
+    
+
+}
+
+.titulo-produtos{
+    text-align: center;
+    padding-top: 20px;
+    background-color: #EFE1D6;
+    color: #5C4033;
+}
+
+/* modal de login */
+
+.modal {
+    padding: 2rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #F5EBDD;
+    color: #2E1B0E;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 0 4px 8px #C69C6D;
+    width: 300px;
+    text-align: center;
+    margin: auto;
+}
+
+.modal::backdrop {
+    background: rgba(0, 0, 0, 0.4); /* Fundo escuro ao redor do modal */
+}
+
+.modal label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #5C4033;
+}
+
+.modal input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #C69C6D;
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+.btn-fechar {
+    background-color: #5C4033;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.6rem 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+
+    &:hover{
+        background-color: #A67B5B;
+        color: #341608;
+    }
+}
+
+.btn-logar{
+    background-color: #5C4033;
+    color: #fff;
+    border: none;
+    padding: 0.6rem 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+
+    &:hover{
+        background-color: #A67B5B;
+        color: #341608;
+    }
+}
+
+.texto-modal{
+    margin-bottom: 10px;
+}
+
+.ModalSucesso {
+    padding: 2rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #F5EBDD; 
+    color: #2E1B0E;            
+    box-shadow: 0 4px 8px #C69C6D;
+    width: 300px;
+    text-align: center;
+    margin: auto;
+}
+
+.ModalSucesso::backdrop {
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.textoSucesso {
+    font-size: 18px;
+    font-weight: bold;
+    color: #5C4033;
+}
+
+.modal-registro {
+    padding: 2rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #F5EBDD; 
+    color: #2E1B0E;
+    box-shadow: 0 4px 8px #C69C6D;
+    width: 320px;
+    text-align: left;
+    margin: auto;
+}
+
+.modal-registro::backdrop {
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.modal-registro label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #5C4033;
+}
+
+.modal-registro input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1.2rem;
+    border: 1px solid #C69C6D;
+    border-radius: 6px;
+    font-family: inherit;
+    background-color: #fffaf5;
+}
+
+.btn-registro,
+.btn-fechar-registro {
+    background-color: #5C4033;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.6rem 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
+    transition: background 0.3s ease;
+} 
+.btn-registro:hover,
+.btn-fechar-registro:hover {
+    background-color: #A67B5B;
+    color: #341608;
+}
+
+.hide{
+    display: none;
+}
+
