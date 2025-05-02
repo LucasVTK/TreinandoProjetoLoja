@@ -146,11 +146,21 @@ function verificaUsuarioLogado(){
     if(usuarioLogado){
         document.querySelector(".btn-login").classList.add("hide")
         document.querySelector(".logado").classList.remove("logado")
-    }
+        exibeCredenciais()
 
-    
+    }   
 }
 
+function exibeCredenciais(){
 
+    const usuario = JSON.parse(localStorage.getItem("usuario"))
+    
+    const saidaNome = document.querySelector(".saidaNome")
+    const saidaEmail = document.querySelector(".saidaEmail")
 
+    saidaEmail.innerHTML = usuario.email
+    saidaNome.innerHTML = usuario.nome
 
+    console.log("TESTE TESTE")
+
+}
